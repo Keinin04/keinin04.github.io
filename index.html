@@ -38,21 +38,27 @@ searchInput.addEventListener("keyup", function (event) {
 					<h1>FASHION AVENUE</h1>
 				</a>
 			</div>
+
+
 			<div class="links">
 				<ul>
-					<li><a href="#">Men</a></li>
-					<li><a href="#">Woman</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a href="#trendcollection">Men</a></li>
+					<li><a href="#findjacketcool">Categories</a></li>
+					<li><a href="blog.html">Blog</a></li>
 					<li><a href="#contact">Contacts</a></li>
+					<!-- icon search
 					<li><a href="#">
 						<a href="#" id="search-icon">
 						<img src="assets/icons/search.svg" alt="search">
 					</a>
 					<input type="search" class="search" id="search-input" placeholder="Cari Produk">
 					</li>
+
+					-->
 				</ul>
 			</div>
+
+			<!-- icon-for-user
 			<div class="icon-for-user">
 				<a href="#">
 					<img src="assets/icons/person.svg" alt="person">
@@ -64,6 +70,7 @@ searchInput.addEventListener("keyup", function (event) {
 			<div class="menu">
 				<img src="assets/icons/menu.svg" alt="menu">
 			</div>
+			-->
 		</nav>
 	</header><!-- /header -->
 
@@ -78,7 +85,7 @@ searchInput.addEventListener("keyup", function (event) {
 						<h1 class="text-main secondary-col">Choose Everything You Like
 						</h1>
 						<p class="text-second">there are various kinds of interesting clothes that you can get here </p>
-						<a href="#" class="btn-rounded text-main">BELI SEKARANG!</a>
+						<a href="#" class="btn-rounded text-main">HUBUNGI SEKARANG</a>
 					</div>
 					<div class="banner-image col-sm-12 col-md-6 d-none d-sm-block">
 						<img src="assets/images/banner1-removebg-preview.png" alt="image-banner" class="img-fluid">
@@ -88,16 +95,11 @@ searchInput.addEventListener("keyup", function (event) {
 		</section>
 
 		<!--NEW ARRIVALS-->
-		<section class="new-arrivals">
+		<section class="new-arrivals" id="produkkami">
 			<div class="container">
 				<div class="text-arrivals row align-items-center">
 					<div class="title col-7 col-sm-6 col-md-9 text-left">
 						<h3 class="text-main"><span>PRODUK</span> KAMI</h3>
-					</div>
-					<div class="text-show-all col-5 col-sm-6 col-md-3 text-right text-main pr-md-0">
-						<a href="#">
-							<p>TEMUKAN PRODUK <img src="assets/icons/arrow.png" alt="icon-arrow"></p>
-						</a>
 					</div>
 				</div>
                 				
@@ -140,16 +142,12 @@ searchInput.addEventListener("keyup", function (event) {
 		</section>
 
 		<!--PRODUCTS-->
+		<section id="trendcollection"></section>
 		<section class="products-section">
 			<div class="container">
 				<div class="text-products row align-items-center">
 					<div class="title-product col-7 col-sm-6 col-md-9">
 						<h2 class="text-main">TREND COLLECTION</h2>
-					</div>
-					<div class="text-show-all text-right text-main col-5 col-sm-6 col-md-3 pr-md-0">
-						<a href="#">
-							<p>TEMUKAN PRODUK <img src="assets/icons/arrow-2.png" alt="icon-arrow"></p>
-						</a>
 					</div>
 				</div>
 
@@ -217,13 +215,14 @@ searchInput.addEventListener("keyup", function (event) {
 		</section>
 
 		<!--Preview-->
+		<section id="findjacketcool"></section>
 		<section class="preview-section d-md-flex align-items-center">
 			<div class="container">
 				<div class="preview row">
 					<div class="preview-item col-12 col-sm-12 col-md-6">
 						<div class="image-preview">
 							<img src="assets/images/jaketaja.jpg" alt="preview" class="img-fluid">
-							<a href="#">
+							<a href="#produkkami">
 								<p class="text-main">Find a Cool 
 									<br>
 									Jacket</p>
@@ -234,7 +233,7 @@ searchInput.addEventListener("keyup", function (event) {
 					<div class="preview-item col-12 col-sm-12 col-md-6">
 						<div class="image-preview">
 							<img src="assets/images/jaketcool.jpg" alt="preview" class="img-fluid">
-							<a href="#">
+							<a href="#trendcollection">
 								<p class="text-main">find a winter  
 									<br>
 									Jacket</p>
@@ -252,7 +251,7 @@ searchInput.addEventListener("keyup", function (event) {
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-md-8 mx-auto text-center">
-					<h6 class="text-primary">FEEL FREE TO ASK</h6>
+					<h6 class="text-primary" style="color: #1C4759 !important;">FEEL FREE TO ASK</h6>
 					<h1>Contact Us</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare nec massa sed euismod. Nunc viverra nulla ultrices purus facilisis, nec malesuada velit porttitor.</p>
 				</div>
@@ -295,9 +294,8 @@ searchInput.addEventListener("keyup", function (event) {
 								<div class="footer-item-content">
 									<h3 class="text-main">Store</h3>
 									<p><a href="#">Men</a></p>
-									<p><a href="#">Woman</a></p>
-									<p><a href="#">Child</a></p>
-									<p><a href="#">Teen</a></p>
+									<p><a href="#">Categories</a></p>
+
 								</div>
 							</div>
 						</div>
@@ -307,7 +305,7 @@ searchInput.addEventListener("keyup", function (event) {
 								<div class="footer-item-content">
 									<h3 class="text-main">Business</h3>
 									<p><a href="#">Fashionavenue@gmail.com</a></p>
-									<p><a href="#">0895-3743-66226</a></p>
+									<p><a href="#">0123-4567-890</a></p>
 									<p><a href="#">Margonda, Depok</a></p>
 								</div>
 							</div>
@@ -318,8 +316,11 @@ searchInput.addEventListener("keyup", function (event) {
 								<div class="footer-item-content">
 									<h3 class="text-main">Social</h3>
 									<div class="social-icons">
-									<a href="https://www.instagram.com/agungsofyaann" class="ig-icon">
+									<a href="https://www.instagram.com/avenuefashion2023" class="ig-icon">
 										<img src="assets/images/instagram.png" alt="ig" class="img-fluid">
+									</a>
+									<a href="https://www.tiktok.com/@fashionavenue2023?is_from_webapp=1&sender_device=pc" class="ig-icon">
+										<img src="assets/images/tiktok.svg" alt="ig" class="img-fluid">
 									</a>
 								</div>
 							</div>
@@ -332,7 +333,7 @@ searchInput.addEventListener("keyup", function (event) {
 				<div class="row">
 					<div class="col-12">
 						<div class="copyright-content text-center mt-4">
-							<p class="text-second">Fashion Avenue Online Store Copyright &copy; 2020 All Rights Reserved</p>
+							<p class="text-second">Fashion Avenue Online Store Copyright &copy; 2023 All Rights Reserved</p>
 						</div>
 					</div>
 				</div>
