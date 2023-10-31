@@ -29,9 +29,9 @@ searchInput.addEventListener("keyup", function (event) {
 });
 </script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 
-	<nav class="main-nav sticky-top"> <!-- Navbar -->
+	<nav class="main-nav sticky-top navbar" id="navbar">
 		<div class="brand text-main">
 			<a href="#">
 				<h1>FASHION AVENUE</h1>
@@ -41,7 +41,8 @@ searchInput.addEventListener("keyup", function (event) {
 
 		<div class="links">
 			<ul>
-				<li><a href="#trendcollection">Men</a></li>
+				<li><a  href="#arrival">New Arrival</a></li>
+				<li><a href="#trend">Trend</a></li>
 				<li><a href="#findjacketcool">Categories</a></li>
 				<li><a href="blog.html">Blog</a></li>
 				<li><a href="#contact">Contacts</a></li>
@@ -74,7 +75,7 @@ searchInput.addEventListener("keyup", function (event) {
 
 	<main>
 		<!--BANNER-->
-		<section class="banner">
+		<div class="banner">
 			<div class="container">
 				<div class="row justify-content-center align-items-center pad-tab" data-aos="fade-up">
 					<div class="banner-text col-sm-12 col-md-6">
@@ -89,14 +90,14 @@ searchInput.addEventListener("keyup", function (event) {
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
 		<!--NEW ARRIVALS-->
-		<section class="new-arrivals" id="produkkami">
+		<section class="new-arrivals" id="arrival">
 			<div class="container">
 				<div class="text-arrivals row align-items-center">
 					<div class="title col-7 col-sm-6 col-md-9 text-left">
-						<h3 class="text-main"><span>PRODUK</span> KAMI</h3>
+						<h3 class="text-main"><span>NEW</span> ARRIVAL</h3>
 					</div>
 				</div>
                 				
@@ -139,7 +140,7 @@ searchInput.addEventListener("keyup", function (event) {
 		</section>
 
 		<!--PRODUCTS-->
-		<section class="products-section" id="trendcollection">
+		<section class="products-section" id="trend">
 			<div class="container">
 				<div class="text-products row align-items-center">
 					<div class="title-product col-7 col-sm-6 col-md-9">
@@ -216,8 +217,8 @@ searchInput.addEventListener("keyup", function (event) {
 				<div class="preview row">
 					<div class="preview-item col-12 col-sm-12 col-md-6">
 						<div class="image-preview">
-							<img src="assets/images/jaketaja.jpg" alt="preview" class="img-fluid">
-							<a href="#produkkami">
+							<img src="assets/images/jaketaja.jpg" alt="" class="img-fluid" >
+							<a href="#arrival">
 								<p class="text-main">Find a Cool 
 									<br>
 									Jacket</p>
@@ -302,8 +303,11 @@ searchInput.addEventListener("keyup", function (event) {
 							<div>
 								<div class="footer-item-content">
 									<h3 class="text-main">Store</h3>
-									<p><a href="#">Men</a></p>
-									<p><a href="#">Categories</a></p>
+									<p><a href="#arrival">New Arrival</a></p>
+									<p><a href="#trend">Trend</a></p>
+									<p><a href="#findjacketcool">Categories</a></p>
+									<p><a href="#">Blog</a></p>
+									<p><a href="#contact">Contacts</a></p>
 
 								</div>
 							</div>
