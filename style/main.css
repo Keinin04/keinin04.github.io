@@ -45,6 +45,11 @@ section {
 	padding-bottom: 120px;
 }
 
+section#arrival {
+	padding-top: 20px;
+	padding-bottom: 0;
+}
+
 .wrap-login {
 	background-color: #FFFFFF;
 	min-height: 100vh;
