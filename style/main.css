@@ -45,10 +45,6 @@ section {
 	padding-bottom: 120px;
 }
 
-section#arrival {
-	padding-top: 20px;
-	padding-bottom: 0;
-}
 
 .wrap-login {
 	background-color: #FFFFFF;
@@ -127,9 +123,6 @@ nav .icon-for-user a:nth-child(2) {
 
 
 /* banner */
-section.banner {
-	background-color: #EFEFEF;
-}
 
 .banner-text p {
 	color: #6A6A6A;
@@ -175,6 +168,7 @@ section.banner {
 
 /* new arrivals */
 section.new-arrivals {
+	padding-top: 0;
 	background-color: #FBFBFB;
 	min-height: 762px;
 }
