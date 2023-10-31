@@ -40,6 +40,11 @@ body {
 	background-color: #FBFBFB;
 }
 
+section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
 .wrap-login {
 	background-color: #FFFFFF;
 	min-height: 100vh;
