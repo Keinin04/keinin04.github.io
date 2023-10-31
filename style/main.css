@@ -37,6 +37,7 @@ a:hover {
 
 
 body {
+	position: relative;
 	background-color: #FBFBFB;
 }
 
