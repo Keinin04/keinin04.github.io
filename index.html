@@ -365,5 +365,18 @@ searchInput.addEventListener("keyup", function (event) {
 	<script>
 		AOS.init();
 	</script>
+
+	<!-- Update Harga -->
+	<script> 
+		function updateHarga() {
+			const kodeBajuSelect = document.getElementById('kodeBaju');
+			const hargaDisplay = document.getElementById('hargaDisplay');
+			const selectedOption = kodeBajuSelect.options[kodeBajuSelect.selectedIndex];
+			const harga = selectedOption.getAttribute('data-harga');
+			hargaDisplay.value = harga;
+		}
+		// Panggil fungsi ini saat halaman dimuat untuk mengatur harga awal
+		updateHarga();
+	</script>
 </body>
 </html>
