@@ -264,10 +264,22 @@ searchInput.addEventListener("keyup", function (event) {
 					<input type="text" class="form-control" placeholder="E-mail">
 				</div>
 				<div class="col-md-10">
-					<input type="text" class="form-control" placeholder="Enter Subject">
+					<select name="kodeBaju" id="kodeBaju" class="form-select" onchange="updateHarga()">
+                        <option value=""  disabled selected>Pilih Baju</option>
+                        <option value="B001" data-harga="Rp 5.400.000">GARMENT DYED REPS NY DOWN</option>
+                        <option value="B002" data-harga="Rp 3.200.000">HOODED OVERSHIRT/ANORAK</option>
+                        <option value="B003" data-harga="Rp 1.900.000">POLO COLLAR IN PURE WOOL</option>
+                        <option value="B004" data-harga="Rp 4.300.000">OPAQUE NYLON TWILL DOWN</option>
+					</select>
+				</div>
+				<div class="col-md-5">
+					<input type="text" class="form-control" id="hargaDisplay" placeholder="Harga" >
+				</div>
+				<div class="col-md-5">
+					<input type="number" class="form-control" placeholder="Jumlah" min="0">
 				</div>
 				<div class="col-md-10">
-					<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Enter Message"></textarea>
+					<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Alamat"></textarea>
 				</div>
 				<div class="col-md-10 d-grid">
 					<button class="btn btn-primary">Send</button>
