@@ -34,6 +34,14 @@ a:hover {
 	border-radius: 5px;
 }
 
+/* navbar */
+.navbar-toggler-icon {
+background-image: url(../assets/icons/navigation-bar.png);
+}
+.navbar {
+	background-color: #ffffff;
+}
+
 
 
 body {
@@ -169,7 +177,6 @@ nav .icon-for-user a:nth-child(2) {
 
 /* new arrivals */
 section.new-arrivals {
-	padding-top: 0;
 	background-color: #FBFBFB;
 	min-height: 762px;
 }
@@ -691,7 +698,7 @@ footer .footer-item-content a.ig-icon {
 	}
 
 	.banner-text a {
-		height: 42px;
+		height: 62px;
 		width: 140px;
 		font-size: 14px;
 	}

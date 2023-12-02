@@ -6,11 +6,15 @@
 	<link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+	<!-- icon -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<title>Fashion Avenue Online Store | Homepage</title>
 
 </head>
 <body data-spy="scroll" data-target="#navbar">
-
+<!-- Nav origin
 	<nav class="main-nav sticky-top navbar" id="navbar">
 		<div class="brand text-main">
 			<a href="#">
@@ -27,35 +31,46 @@
 				<li><a href="blog.html">Blog</a></li>
 				<li><a href="#contact">Contacts</a></li>
 
-				<!-- icon search
-				<li><a href="#">
-					<a href="#" id="search-icon">
-					<img src="assets/icons/search.svg" alt="search">
-				</a>
-				<input type="search" class="search" id="search-input" placeholder="Cari Produk">
-				</li>
-
-				-->
 			</ul>
 		</div>
 
-		<!-- icon-for-user
-		<div class="icon-for-user">
-			<a href="#">
-				<img src="assets/icons/person.svg" alt="person">
-			</a>
-			<a href="#">
-				<img src="assets/icons/shop-bag.svg" alt="person">
-			</a>
-		</div>
-		<div class="menu">
-			<img src="assets/icons/menu.svg" alt="menu">
-		</div>
-		-->
 	</nav>
+-->
+
+  <nav id="navbar-example" class="navbar navbar-expand-lg navbar-white sticky-top py-2">
+    <div class="container">
+      <a class="navbar-brand text-main brand" href="#" style="text-decoration: none;">
+        <h1>FASHION AVENUE</h1></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="links collapse navbar-collapse justify-content-end " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#arrival">New Arrival</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trend">Trend</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#findjacketcool">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/login">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- Navbar -->
 
 	<main>
 		<!--BANNER-->
+		<header>
 		<div class="banner vh-100">
 			<div class="container">
 				<div class="row justify-content-center align-items-center pad-tab" data-aos="fade-up">
@@ -64,7 +79,7 @@
 						<h1 class="text-main secondary-col">Choose Everything You Like
 						</h1>
 						<p class="text-second">there are various kinds of interesting clothes that you can get here </p>
-						<a href="#" class="btn-rounded text-main">HUBUNGI SEKARANG</a>
+						<a href="#contact" class="btn-rounded text-main">HUBUNGI SEKARANG</a>
 					</div>
 					<div class="banner-image col-sm-12 col-md-6 d-none d-sm-block">
 						<img src="assets/images/banner1-removebg-preview.png" alt="image-banner" class="img-fluid">
@@ -72,6 +87,8 @@
 				</div>
 			</div>
 		</div>
+		</header>
+
 
 		<!--NEW ARRIVALS-->
 		<section class="new-arrivals" id="arrival">
@@ -259,7 +276,7 @@
 					<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Alamat"></textarea>
 				</div>
 				<div class="col-md-5 d-grid">
-					<button type="submit" class="btn btn-primary">Send</button>
+					<button type="submit" class="btn btn-primary" id="btn-send">Send</button>
 				</div>
 				<div class="col-md-5 d-grid">
 					<button type="reset" class="btn btn-outline-primary">Cancel</button>
@@ -287,7 +304,6 @@
 									<p><a href="#arrival">New Arrival</a></p>
 									<p><a href="#trend">Trend</a></p>
 									<p><a href="#findjacketcool">Categories</a></p>
-									<p><a href="#">Blog</a></p>
 									<p><a href="#contact">Contacts</a></p>
 
 								</div>
@@ -310,10 +326,10 @@
 								<div class="footer-item-content">
 									<h3 class="text-main">Social</h3>
 									<div class="social-icons">
-									<a href="https://www.instagram.com/avenuefashion2023" class="ig-icon">
+									<a href="https://www.instagram.com/avenuefashion2023" class="ig-icon" target="_blank">
 										<img src="assets/images/instagram.png" alt="ig" class="img-fluid">
 									</a>
-									<a href="https://www.tiktok.com/@fashionavenue2023?is_from_webapp=1&sender_device=pc" class="ig-icon">
+									<a href="https://www.tiktok.com/@fashionavenue2023?is_from_webapp=1&sender_device=pc" class="ig-icon" target="_blank">
 										<img src="assets/images/tiktok.svg" alt="ig" class="img-fluid">
 									</a>
 								</div>
@@ -337,14 +353,38 @@
 
 		
 
-	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="library/bootstrap/js/bootstrap.min.js"></script> -->
 	<script src="script/index.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script>
 		AOS.init();
 	</script>
+
+	<script>
+		$(document).ready(function(){
+    $('#btn-send').click(function(){
+        Swal.fire(
+            'Berhasil dikirim!',
+            '',
+            'success'
+        ).then(function() {
+            // Reload the page after the SweetAlert is closed
+            location.reload();
+        });
+    });
+});
+
+		
+	</script>
+
+	<script>
+	
+
+	</script>
+
 
 	<!-- Update Harga -->
 	<script> 
