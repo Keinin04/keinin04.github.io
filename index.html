@@ -14,28 +14,6 @@
 
 </head>
 <body data-spy="scroll" data-target="#navbar">
-<!-- Nav origin
-	<nav class="main-nav sticky-top navbar" id="navbar">
-		<div class="brand text-main">
-			<a href="#">
-				<h1>FASHION AVENUE</h1>
-			</a>
-		</div>
-
-
-		<div class="links">
-			<ul>
-				<li><a  href="#arrival">New Arrival</a></li>
-				<li><a href="#trend">Trend</a></li>
-				<li><a href="#findjacketcool">Categories</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="#contact">Contacts</a></li>
-
-			</ul>
-		</div>
-
-	</nav>
--->
 
   <nav id="navbar-example" class="navbar navbar-expand-lg navbar-white sticky-top py-2">
     <div class="container">
@@ -60,6 +38,11 @@
           <li class="nav-item">
             <a class="nav-link " href="#contact">Contact</a>
           </li>
+		  <li>
+			<a href="login.php">
+				<img src="assets/icons/person.svg" alt="Person">
+			</a>
+		  </li>
         </ul>
       </div>
     </div>
@@ -249,10 +232,10 @@
 
 			<form action="" class="row g-3 justify-content-center" method="post">
 				<div class="col-md-5">
-					<input type="text" class="form-control" placeholder="Nama">
+					<input type="text" class="form-control" placeholder="Nama" id="nama">
 				</div>
 				<div class="col-md-5">
-					<input type="text" class="form-control" placeholder="E-mail">
+					<input type="text" class="form-control" placeholder="E-mail" id="email">
 				</div>
 				<div class="col-md-10">
 					<select name="kodeBaju" id="kodeBaju" class="form-select" onchange="updateHarga()">
@@ -425,6 +408,23 @@
 		}
 		// Panggil fungsi ini saat halaman dimuat untuk mengatur harga awal
 		updateHarga();
+	</script>
+
+	<script>
+		fetch('get_username.php')
+			.then(response => response.json())
+			.then(data => {
+				const namaInput = document.getElementById('nama');
+				const emailInput = document.getElementById('email');
+				if (data.username) {
+					namaInput.value = data.username;
+				} 
+
+				if(data.email) {
+					emailInput.value = data.email;
+				}
+			})
+			.catch(error => console.error('Erorr fetching username: ',error));
 	</script>
 
 	
