@@ -128,7 +128,11 @@ nav .icon-for-user a {
 nav .icon-for-user a:nth-child(2) {
 	padding-right: 0;
 }
-
+@media screen and (min-width: 992px) {
+	.icon-person {
+		padding-left: 50px;
+	}
+}
 
 
 /* banner */
