@@ -243,11 +243,11 @@
 			<div class="row mb-5">
 				<div class="col-md-8 mx-auto text-center">
 					<h6 class="text-primary" style="color: #1C4759 !important;">BUYING</h6>
-					<h1>Contact Us</h1>
+					<h1>Buy Us</h1>
 				</div>
 			</div>
 
-			<form action="" class="row g-3 justify-content-center">
+			<form action="" class="row g-3 justify-content-center" method="post">
 				<div class="col-md-5">
 					<input type="text" class="form-control" placeholder="Nama">
 				</div>
@@ -360,27 +360,58 @@
 		AOS.init();
 	</script>
 
+
 	<script>
-		$(document).ready(function(){
-    $('#btn-send').click(function(){
-        Swal.fire(
-            'Berhasil dikirim!',
-            '',
-            'success'
-        ).then(function() {
-            // Reload the page after the SweetAlert is closed
-            location.reload();
-        });
-    });
-});
+		$(document).ready(function () {
+			$('#btn-send').click(function (event) {
+				// Prevent the default form submission
+				event.preventDefault();
+
+				// Check if all fields are filled
+				if (validateForm()) {
+					// delay
+					setTimeout(function () {
+						Swal.fire(
+							'Berhasil dikirim!',
+							'',
+							'success'
+						).then(function () {
+							// refersh setalah berhasil
+							location.reload();
+						});
+					}, 2000); // delay 2 detik
+				} else {
+					// Display SweetAlert for incomplete form
+					Swal.fire(
+						'Harap isi semua kolom!',
+						'',
+						'warning'
+					);
+				}
+			});
+
+			// Function to validate the form
+			function validateForm() {
+				var nama = $('input[placeholder="Nama"]').val();
+				var email = $('input[placeholder="E-mail"]').val();
+				var kodeBaju = $('#kodeBaju').val();
+				var jumlah = $('input[placeholder="Jumlah"]').val();
+				var alamat = $('textarea[placeholder="Alamat"]').val();
+
+				// Check if any field is empty
+				if (nama && email && kodeBaju && jumlah && alamat) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		});
+	</script>
+
+
 
 		
-	</script>
 
-	<script>
-	
-
-	</script>
 
 
 	<!-- Update Harga -->
